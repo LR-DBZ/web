@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo ®</title>
+    <meta name="author" content="Leonardo Rafael">
+    <link rel="icon" type="image/webp" href="./img/avatar.webp">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <script type="module" defer src="./js/bundle.js"></script>
+</head>
+
+<body>
+    <div id="topbar">
+        <div id="topbar-left">
+            <span class="topbar-item">Activities</span>
+            <span class="topbar-separator"></span>
+            <span id="topbar-term-tab">
+                <img src="./img/arch.webp" id="arch-icon">
+                <span class="topbar-item">Terminal</span>
+            </span>
+        </div>
+        <div id="topbar-center"></div>
+        <div id="topbar-right">eth0 &#xb7; connected</div>
+    </div>
+    <div id="sidenav">
+        <button id="sidenavBtn"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <circle cx="5" cy="5" r="3" />
+                <circle cx="12" cy="5" r="3" />
+                <circle cx="19" cy="5" r="3" />
+                <circle cx="5" cy="12" r="3" />
+                <circle cx="12" cy="12" r="3" />
+                <circle cx="19" cy="12" r="3" />
+                <circle cx="5" cy="19" r="3" />
+                <circle cx="12" cy="19" r="3" />
+                <circle cx="19" cy="19" r="3" />
+            </svg></button>
+        <div class="profile-area">
+            <img id="profilePic" src="./img/logo.webp" alt="Leonardo Rafael">
+            <span class="profile-name">TUP4C :: LRDBz</span>
+        </div>
+    </div>
+    <div class="terminal-wrapper">
+        <div class="terminal-window">
+            <div class="term-header">
+                <div class="term-controls">
+                    <span class="dot close"></span>
+                    <span class="dot minimize"></span>
+                    <span class="dot maximize"></span>
+                </div>
+                <div class="term-tab">
+                    <img src="./img/arch.webp" class="term-tab-icon">
+                    Terminal
+                </div>
+                <div class="term-spacer"></div>
+            </div>
+            <div id="container">
+                <div id="output"></div>
+                <div id="input-line" class="input-line">
+                    <div id="prompt" class="prompt-color"></div>&nbsp;
+                    <div>
+                        <input type="text" id="cmdline" autocomplete="off" autocorrect="off" autocapitalize="off"
+                            spellcheck="false" autofocus />
+                    </div>
+                </div>
+            </div>
+            <span class="term-rsz n"></span>
+            <span class="term-rsz s"></span>
+            <span class="term-rsz e"></span>
+            <span class="term-rsz w"></span>
+            <span class="term-rsz ne"></span>
+            <span class="term-rsz nw"></span>
+            <span class="term-rsz se"></span>
+            <span class="term-rsz sw"></span>
+        </div>
+    </div>
+</body>
+
+</html>
